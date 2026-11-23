@@ -1,0 +1,4 @@
+anyio==4.16.0
+google-auth[requests]==2.63.1
+httpx2==2.16.2
+mcp==2.3.0

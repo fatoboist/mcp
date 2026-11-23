@@ -1,0 +1,16 @@
+# Opens pull requests to update pinned dependencies, so that CI tests every
+# new MCP SDK release against the samples.
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/sdk-samples/python"
+    schedule:
+      interval: "weekly"
+    groups:
+      python-sdk-samples:
+        patterns:
+          - "*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
