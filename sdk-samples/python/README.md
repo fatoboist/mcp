@@ -40,9 +40,8 @@ with servers that support MCP version `2026-07-28` and with earlier servers.
     gcloud auth application-default login
     ```
 
-1.  In your Google Cloud project, enable the API and the MCP server for the
-    product that you want to use. See
-    [Enable or disable MCP servers](https://docs.cloud.google.com/mcp/enable-disable-mcp-servers).
+1.  In your Google Cloud project, [enable the product API](https://docs.cloud.google.com/mcp/enable-disable-mcp-servers)
+    for the MCP server that you want to use.
 1.  Make sure you have the MCP Tool User (`roles/mcp.toolUser`) role and the
     product roles that the tool, prompt, or resource requires.
 1.  Install the dependencies:
